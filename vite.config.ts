@@ -42,7 +42,7 @@ export default defineConfig(({ mode }) => ({
 							'fonts/*.woff2'
 						],
 						manifest: {
-							theme_color: '#BD34FE',
+							theme_color: '#80F',
 							icons: [
 								{
 									src: '/android-chrome-192x192.png',
@@ -58,6 +58,6 @@ export default defineConfig(({ mode }) => ({
 							]
 						}
 					})
-			  ])
+				])
 	]
 }))

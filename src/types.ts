@@ -1,15 +1,6 @@
-export interface IFruit {
+export interface IProject {
 	name: string
-	image: {
-		author: {
-			name: string
-			url: string
-		}
-		color: string
-		url: string
-	}
-	metadata: {
-		name: string
-		value: string
-	}[]
+	description: string
+	image: string
+	link: string
 }
