@@ -26,4 +26,58 @@
 		font-display: swap;
 		src: url('/fonts/Inter-Bold.woff2') format('woff2');
 	}
+
+	/* Custom scrollbar styles */
+	::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: rgb(0 0 0 / 5%);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #38f; /* primary-400 */
+		border-radius: 5px;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #0a66c2; /* primary-500 */
+	}
+
+	/* For Firefox */
+	* {
+		scrollbar-width: thin;
+		scrollbar-color: #38f rgb(0 0 0 / 5%); /* primary-400 */
+	}
+
+	/* Hide scrollbar on mobile but keep functionality */
+	@media (width <= 768px) {
+		::-webkit-scrollbar {
+			width: 5px;
+			height: 5px;
+		}
+	}
+
+	/* Improve tap target sizes on mobile */
+	@media (width <= 768px) {
+		button,
+		a {
+			min-height: 44px;
+			min-width: 44px;
+		}
+	}
+
+	/* Smooth scrolling */
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+/* Fix for iOS/Safari momentum scrolling */
+@supports (-webkit-overflow-scrolling: touch) {
+	body {
+		-webkit-overflow-scrolling: touch;
+	}
 }

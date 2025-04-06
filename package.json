@@ -103,7 +103,11 @@
 			"headers-polyfill": "3.1.2",
 			"micromatch@<4.0.8": ">=4.0.8",
 			"serialize-javascript@<6.0.2": ">=6.0.2",
-			"esbuild@<=0.24.2": ">=0.25.0"
+			"esbuild@<=0.24.2": ">=0.25.0",
+			"axios": ">=1.8.2",
+			"@babel/runtime": ">=7.26.10",
+			"@babel/helpers": ">=7.26.10",
+			"vite": ">=5.4.16"
 		}
 	},
 	"packageManager": "pnpm@8.10.0"
